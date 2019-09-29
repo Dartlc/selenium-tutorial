@@ -11,7 +11,7 @@ driver = webdriver.Chrome()
 """
     For windows users use "executable_path"
 """
-# driver = webdriver.Chrome(executable_path = "path(driver path)")
+# driver = webdriver.Chrome(executable_path = "driver path")
 
 driver.get("https://www.flipkart.com/")  # url path
 
