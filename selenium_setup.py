@@ -13,11 +13,11 @@ driver = webdriver.Chrome()
 """
 # driver = webdriver.Chrome(executable_path = "driver path")
 
-driver.get("https://www.flipkart.com/")  # url path
+driver.get("https://www.facebook.com/")  # url path
 
 print(driver.title)  # get webpage title
 
-assert "Online" in driver.title  # check if the title have word "Online"
+assert "Facebook" in driver.title  # check if the title have word "Online"
 
 print(driver.current_url)  # get webpage url
 
