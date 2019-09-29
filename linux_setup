@@ -1,0 +1,16 @@
+Check you have installed latest version of chrome brwoser-> chromium-browser -version
+If not, install latest version of chrome sudo apt-get install chromium-browser
+get appropriate version of chrome driver from here
+Unzip the chromedriver.zip
+Move the file to /usr/bin directory sudo mv chromedriver /usr/bin
+Goto /usr/bin directory cd /usr/bin
+Now, you would need to run something like sudo chmod a+x chromedriver to mark it executable.
+finally you can execute the code.
+
+from selenium import webdriver
+
+driver = webdriver.Chrome()
+driver.get("http://www.google.com")
+print driver.page_source.encode('utf-8')
+driver.quit()
+display.stop()
