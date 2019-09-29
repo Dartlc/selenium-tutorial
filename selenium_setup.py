@@ -16,8 +16,11 @@ driver = webdriver.Chrome()
 driver.get("https://www.flipkart.com/")  # url path
 
 print(driver.title)  # get webpage title
+
+assert "Online" in driver.title  # check if the title have word "Online"
+
 print(driver.current_url)  # get webpage url
 
-time.sleep(10)  # web open for 10 sec
+time.sleep(5)  # web open for 10 sec
 
 driver.close()  # close the webpage
